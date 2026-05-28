@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="100%" height="100%">
+  <!-- Definitionen für Verläufe und Filter -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A059" />
+      <stop offset="50%" stop-color="#EEDAA2" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3A20" />
+      <stop offset="100%" stop-color="#1E4D2B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo-Icon (Hund & Katze vereint) -->
+  <g transform="translate(5, 5)">
+    <!-- Äußerer goldener Kreis mit Lücke -->
+    <path d="M 25,2 A 23,23 0 1,1 15,45" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+    
+    <!-- Das grüne Herzblatt/Schutzsymbol -->
+    <path d="M 25,12 C 20,4 8,8 8,20 C 8,30 20,38 25,42 C 30,38 42,30 42,20 C 42,8 30,4 25,12 Z" fill="url(#greenGrad)" opacity="0.15" />
+
+    <!-- Stilisierter Hund (links/Mitte) in Gold -->
+    <path d="M 18,36 C 18,28 22,25 25,23 C 27,21 28,18 26,15 C 24.5,13 22,15 22,17 C 22,18.5 21,19 20,19 C 19,19 18,17.5 18,16 C 18,12 22,10 25,10 C 29,10 32,13 31,17 C 30.5,19 31,21 33,23 C 35.5,25.5 36.5,29 36,36 Z" fill="url(#goldGrad)" />
+    
+    <!-- Stilisierte Katze (rechts) in Gold, die sich ankuschelt -->
+    <path d="M 26,36 C 26,30 28,27 30,26 C 31,25 32,23.5 31.5,22 C 31.2,21 30.2,20.5 29.5,21.5 C 29,22.2 28.5,22.5 28,22.5 C 27.5,22.5 27,21.8 27.2,21 C 27.7,19 29.5,18 31,18 C 33,18 34.5,19.5 34,21.5 C 33.7,22.5 34,23.5 35,24.5 C 36,25.5 36.5,27.5 36,36 Z" fill="#EEDAA2" opacity="0.9" />
+
+    <!-- Herzförmiges Nasenlicht/Akzent -->
+    <path d="M 25,32 L 23.5,30 C 22.5,29 23,28 24,28 L 25,29 L 26,28 C 27,28 27.5,29 26.5,30 Z" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Logo-Schriftzug -->
+  <!-- "AURELIA" in elegantem Serif -->
+  <text x="65" y="32" font-family="'Playfair Display', 'Georgia', serif" font-size="22" font-weight="700" fill="#0F3A20" letter-spacing="1">AURELIA</text>
+  
+  <!-- Subtitel "TIERARZTPRAXIS" in klarem Sans-Serif -->
+  <text x="66" y="46" font-family="'Inter', 'Montserrat', 'Arial', sans-serif" font-size="9.5" font-weight="600" fill="#C5A059" letter-spacing="3.5">TIERARZTPRAXIS</text>
+</svg>

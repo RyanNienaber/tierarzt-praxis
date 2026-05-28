@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tierarztpraxis Aurelia – Ihre Premium-Praxis für Kleintiere & Exoten</title>
+  <meta name="description" content="Herzlich willkommen in der Tierarztpraxis Aurelia. Mit moderner Medizin, Empathie und unserer exklusiven grün-goldenen Praxis-Atmosphäre sorgen wir für das Wohlbefinden Ihrer Liebsten. Jetzt online Termin vereinbaren!">
+  <meta name="keywords" content="Tierarzt, Tierarztpraxis, Hund, Katze, Kleintier, Vogel, Notdienst, Termin buchen, Aurelia, Premium Tierarzt">
+  
+  <!-- Favicon Mock -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <a href="#" class="logo-link" aria-label="Tierarztpraxis Aurelia Homepage">
+        <img src="assets/logo.svg" alt="Tierarztpraxis Aurelia Logo" class="main-logo">
+      </a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen/schließen" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#leistungen" class="nav-item">Leistungen</a></li>
+          <li><a href="#notdienst" class="nav-item notdienst-link">Notdienst</a></li>
+          <li><a href="#team" class="nav-item">Unser Team</a></li>
+          <li><a href="#kontakt" class="nav-item">Kontakt</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <button class="btn btn-gold btn-cta" id="headerCtaBtn">Termin buchen</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">Exzellenz & Empathie</span>
+          <h1 class="hero-title">Ihre Lieblinge in den <span class="text-gold">besten Händen</span>.</h1>
+          <p class="hero-description">
+            Willkommen in der Tierarztpraxis Aurelia. Wir vereinen modernste Tiermedizin mit einer stressfreien Wohlfühl-Atmosphäre. Für Hunde, Katzen, Kleintiere und exotische Patienten.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-gold btn-lg" id="heroBookBtn">Termin online vereinbaren</button>
+            <a href="#notdienst" class="btn btn-outline-white btn-lg">Notfall-Info</a>
+          </div>
+        </div>
+        
+        <div class="hero-card">
+          <div class="quick-info-card">
+            <h3>Heute für Sie da</h3>
+            <div class="info-row">
+              <span class="info-label">Sprechzeiten:</span>
+              <span class="info-value">08:00 – 12:00 & 14:00 – 18:00</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Telefon:</span>
+              <a href="tel:+498912345678" class="info-value text-gold font-bold">+49 (0) 89 123 456 78</a>
+            </div>
+            <div class="info-status">
+              <span class="status-indicator online"></span>
+              <span class="status-text">Praxis geöffnet</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Dekorative goldene Welle unten -->
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z" fill="#FAF9F5"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==================== LEISTUNGEN (SERVICES) ==================== -->
+    <section class="services-section section-padding" id="leistungen">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Medizinische Kompetenz</span>
+          <h2 class="section-title">Unsere Leistungen für Ihr Tier</h2>
+          <div class="gold-divider"></div>
+          <p class="section-description">
+            Vom Gesundheits-Check bis zur komplexen Chirurgie: Wir bieten ein breites Spektrum erstklassiger tiermedizinischer Leistungen auf Klinik-Niveau.
+          </p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <!-- Vorsorge & Impfung Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Vorsorge & Impfschutz</h3>
+            <p>Individuelle Impfkonzepte, regelmäßige Vorsorgeuntersuchungen und Parasitenprophylaxe für ein langes, gesundes Tierleben.</p>
+            <button class="service-link-btn" data-service="vorsorge">Mehr erfahren <span class="arrow">&rarr;</span></button>
+          </div>
+          
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <!-- Chirurgie Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l4-4a1 1 0 0 0-1.4-1.4l-1.6 1.6a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-4 4z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.7 6.3L4.3 16.7a2 2 0 0 0 0 2.8l.2.2a2 2 0 0 0 2.8 0L17.7 9.3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 21h4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Weichteilchirurgie</h3>
+            <p>Schonende, schmerztherapeutisch begleitete Operationen in unserem hochmodernen, keimfreien OP-Bereich mit Inhalationsnarkose.</p>
+            <button class="service-link-btn" data-service="chirurgie">Mehr erfahren <span class="arrow">&rarr;</span></button>
+          </div>
+          
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <!-- Zahnheilkunde Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C8.5 2 6 4.5 6 8c0 4 3 6.5 3 9.5c0 1.5-1.5 2.5-1.5 2.5h9s-1.5-1-1.5-2.5c0-3 3-5.5 3-9.5c0-3.5-2.5-6-6-6z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 8c1 0 2 1 2 2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Zahnheilkunde</h3>
+            <p>Professionelle Zahnreinigung per Ultraschall, digitales Dentalröntgen und schonende Zahnextraktionen für frischen Atem und schmerzfreie Zähne.</p>
+            <button class="service-link-btn" data-service="zahnheilkunde">Mehr erfahren <span class="arrow">&rarr;</span></button>
+          </div>
+          
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <!-- Labor Icon -->
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10 2v7.5M14 2v7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.5 2h7M4.5 22h15M5.5 19.5L10 9.5h4l4.5 10c.8 1.8-.5 3.5-2.5 3.5H8c-2 0-3.3-1.7-2.5-3.5z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Labordiagnostik</h3>
+            <p>Sofortige Blutanalyse, Urin- und Kotuntersuchungen in unserem hauseigenen Labor. Schnelle Ergebnisse ermöglichen eine sofortige Therapie.</p>
+            <button class="service-link-btn" data-service="labor">Mehr erfahren <span class="arrow">&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NOTDIENST (EMERGENCY) ==================== -->
+    <section class="emergency-section section-padding" id="notdienst">
+      <div class="container">
+        <div class="emergency-wrapper">
+          <div class="emergency-content">
+            <div class="emergency-header">
+              <span class="emergency-badge-live"><span class="pulse-dot"></span> NOTFALL-INFO</span>
+              <h2>Schnelle Hilfe im Notdienst</h2>
+            </div>
+            <p class="emergency-text">
+              Ein medizinischer Notfall ist für Tier und Halter eine Extremsituation. Bewahren Sie Ruhe. Wir sind auch außerhalb der regulären Sprechzeiten für lebensbedrohliche Fälle erreichbar oder verweisen Sie auf den aktuellen Notdienst-Verbund.
+            </p>
+            <div class="emergency-steps">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>Ruhe bewahren</h4>
+                <p>Sichern Sie das Tier und vermeiden Sie Hektik.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>Anrufen</h4>
+                <p>Kündigen Sie Ihr Kommen telefonisch an, damit wir alles vorbereiten können.</p>
+              </div>
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>Transport</h4>
+                <p>Transportieren Sie Ihr Tier möglichst warm und sicher.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="emergency-contact-box">
+            <h3>Notdienst-Telefonnummer</h3>
+            <p class="emergency-subtitle">Bitte immer vorab telefonisch anmelden!</p>
+            <a href="tel:+498912345699" class="emergency-phone-btn">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              +49 (0) 89 123 456 99
+            </a>
+            <div class="emergency-note">
+              <p>Unseren hauseigenen Notdienst bieten wir Werktags bis 22:00 Uhr an. Danach verweist unsere Bandansage auf die nächstgelegene Tierklinik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== UNSER TEAM (TEAM) ==================== -->
+    <section class="team-section section-padding" id="team">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Hingabe & Fachwissen</span>
+          <h2 class="section-title">Unser medizinisches Team</h2>
+          <div class="gold-divider"></div>
+          <p class="section-description">
+            Lernen Sie die Menschen kennen, die sich tagtäglich mit viel Herz, Leidenschaft und wissenschaftlicher Präzision um das Wohlergehen Ihrer Vierbeiner kümmern.
+          </p>
+        </div>
+        
+        <div class="team-grid">
+          <!-- Teammitglied 1 -->
+          <div class="team-card">
+            <div class="team-image-placeholder" style="--initials: 'AS'">
+              <div class="team-overlay">
+                <span class="team-specialty">Kardiologie & Innere Medizin</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dr. med. vet. Aurelia Sommer</h3>
+              <p class="team-role">Praxisinhaberin & Cheftierärztin</p>
+              <p class="team-bio">Seit über 15 Jahren mit Herz und Seele Tierärztin. Spezialisiert auf Kardiologie und Ultraschalldiagnostik.</p>
+            </div>
+          </div>
+          
+          <!-- Teammitglied 2 -->
+          <div class="team-card">
+            <div class="team-image-placeholder" style="--initials: 'LW'">
+              <div class="team-overlay">
+                <span class="team-specialty">Chirurgie & Orthopädie</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dr. Lukas Winter</h3>
+              <p class="team-role">Fachtierarzt für Kleintierchirurgie</p>
+              <p class="team-bio">Experte für minimalinvasive Eingriffe, Gelenkchirurgie und professionelles Schmerzmanagement.</p>
+            </div>
+          </div>
+          
+          <!-- Teammitglied 3 -->
+          <div class="team-card">
+            <div class="team-image-placeholder" style="--initials: 'MH'">
+              <div class="team-overlay">
+                <span class="team-specialty">Zahnassistenz & Narkose</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Marie Herbst</h3>
+              <p class="team-role">Tiermedizinische Fachangestellte (TFA)</p>
+              <p class="team-bio">Verantwortlich für die Narkoseüberwachung und die liebevolle Betreuung unserer Stationspatienten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials-section section-padding">
+      <div class="testimonials-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Zufriedene Tierhalter</span>
+          <h2 class="section-title">Was unsere Kunden sagen</h2>
+          <div class="gold-divider"></div>
+        </div>
+        
+        <div class="testimonials-slider-container">
+          <div class="testimonials-slider" id="testimonialSlider">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-rating">
+                <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+              </div>
+              <blockquote class="testimonial-text">
+                "Frau Dr. Sommer und ihr Team sind einfach fantastisch. Meine Labrador-Hündin Bella hatte eine schwere Ohrenentzündung. Hier wurde uns nicht nur medizinisch exzellent geholfen, sondern auch mit so viel Ruhe und Geduld. Bella hat keine Angst mehr vor dem Tierarzt!"
+              </blockquote>
+              <div class="testimonial-author">
+                <cite class="author-name">Sabine M.</cite>
+                <span class="author-pet">mit Bella (Labrador)</span>
+              </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-rating">
+                <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+              </div>
+              <blockquote class="testimonial-text">
+                "Die modernste Praxis, die ich je besucht habe. Der Online-Buchungsassistent ist super praktisch. Dr. Winter hat meinen Kater Leo am Zahn operiert. Die Narkoseüberwachung war erstklassig und die Nachsorge extrem liebevoll. Danke!"
+              </blockquote>
+              <div class="testimonial-author">
+                <cite class="author-name">Christian K.</cite>
+                <span class="author-pet">mit Leo (Hauskatze)</span>
+              </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-rating">
+                <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+              </div>
+              <blockquote class="testimonial-text">
+                "Auch für Vögel und Exoten absolut zu empfehlen! Mit meinem Wellensittich Fips bin ich hier seit zwei Jahren in besten Händen. Das Team besitzt herausragendes Fachwissen bei Ziervögeln, was man nur noch selten findet."
+              </blockquote>
+              <div class="testimonial-author">
+                <cite class="author-name">Nicole S.</cite>
+                <span class="author-pet">mit Fips (Wellensittich)</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="sliderPrev" aria-label="Vorherige Bewertung">&larr;</button>
+            <div class="slider-dots" id="sliderDots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button class="slider-btn next-btn" id="sliderNext" aria-label="Nächste Bewertung">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KONTAKT & ANFAHRT ==================== -->
+    <section class="contact-section section-padding" id="kontakt">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Kontakt & Öffnungszeiten</span>
+          <h2 class="section-title">Wir sind für Sie da</h2>
+          <div class="gold-divider"></div>
+        </div>
+        
+        <div class="contact-grid">
+          <!-- Spalte 1: Info & Sprechzeiten -->
+          <div class="contact-info-column">
+            <div class="info-card-premium">
+              <h3>Unsere Sprechzeiten</h3>
+              <table class="hours-table">
+                <tbody>
+                  <tr>
+                    <td class="day">Montag</td>
+                    <td class="hours">08:00 – 12:00 &nbsp;|&nbsp; 14:00 – 18:00</td>
+                  </tr>
+                  <tr>
+                    <td class="day">Dienstag</td>
+                    <td class="hours">08:00 – 12:00 &nbsp;|&nbsp; 14:00 – 18:00</td>
+                  </tr>
+                  <tr>
+                    <td class="day">Mittwoch</td>
+                    <td class="hours">08:00 – 12:00 <span class="text-muted">(Nachmittags geschlossen)</span></td>
+                  </tr>
+                  <tr>
+                    <td class="day">Donnerstag</td>
+                    <td class="hours">08:00 – 12:00 &nbsp;|&nbsp; 14:00 – 19:00 <span class="badge-gold">Lang</span></td>
+                  </tr>
+                  <tr>
+                    <td class="day">Freitag</td>
+                    <td class="hours">08:00 – 12:00 &nbsp;|&nbsp; 14:00 – 17:00</td>
+                  </tr>
+                  <tr>
+                    <td class="day">Sa / So</td>
+                    <td class="hours font-bold text-gold">Geschlossen (Siehe Notdienst)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="info-details-box">
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Praxis-Adresse</h4>
+                  <p>Aurelia-Weg 24, 80331 München</p>
+                </div>
+              </div>
+              
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>E-Mail Adresse</h4>
+                  <p><a href="mailto:info@tierarzt-aurelia.de">info@tierarzt-aurelia.de</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Spalte 2: Kontaktformular & Custom Map -->
+          <div class="contact-form-column">
+            <div class="form-card-premium">
+              <h3>Nachricht senden</h3>
+              <form id="contactForm" novalidate>
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="contactName">Ihr Name *</label>
+                    <input type="text" id="contactName" name="name" required placeholder="z.B. Maximiliane Muster">
+                    <span class="error-msg" id="nameError">Bitte geben Sie Ihren Namen ein.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="contactEmail">E-Mail Adresse *</label>
+                    <input type="email" id="contactEmail" name="email" required placeholder="name@beispiel.de">
+                    <span class="error-msg" id="emailError">Bitte geben Sie eine gültige E-Mail ein.</span>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contactSubject">Betreff *</label>
+                  <input type="text" id="contactSubject" name="subject" required placeholder="Worum geht es?">
+                  <span class="error-msg" id="subjectError">Bitte geben Sie einen Betreff an.</span>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contactMessage">Ihre Nachricht *</label>
+                  <textarea id="contactMessage" name="message" rows="4" required placeholder="Wie können wir Ihnen und Ihrem Tier helfen?"></textarea>
+                  <span class="error-msg" id="messageError">Bitte schreiben Sie eine Nachricht.</span>
+                </div>
+                
+                <div class="form-privacy-check">
+                  <input type="checkbox" id="contactPrivacy" name="privacy" required>
+                  <label for="contactPrivacy">Ich stimme zu, dass meine Angaben zur Kontaktaufnahme verarbeitet werden. *</label>
+                </div>
+                <span class="error-msg" id="privacyError">Bitte akzeptieren Sie die Datenschutzhinweise.</span>
+                
+                <button type="submit" class="btn btn-green btn-full">Nachricht absenden</button>
+              </form>
+              <div class="form-success-alert" id="contactSuccessAlert">
+                <div class="success-icon">&#10004;</div>
+                <h4>Vielen Dank!</h4>
+                <p>Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen.</p>
+              </div>
+            </div>
+            
+            <!-- Elegante stilisierte Map -->
+            <div class="map-container-mock">
+              <div class="map-bg">
+                <!-- Stilisierte SVG Karte -->
+                <svg viewBox="0 0 400 150" class="styled-map-svg" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Straßen -->
+                  <path d="M 0 50 L 400 50" stroke="#1E4D2B" stroke-width="4" opacity="0.3"/>
+                  <path d="M 120 0 L 120 150" stroke="#1E4D2B" stroke-width="4" opacity="0.3"/>
+                  <path d="M 280 0 L 280 150" stroke="#1E4D2B" stroke-width="6" opacity="0.3"/>
+                  <path d="M 0 110 L 400 110" stroke="#1E4D2B" stroke-width="3" opacity="0.2"/>
+                  <!-- Fluss -->
+                  <path d="M -20 -20 Q 80 80, 200 40 T 420 160" stroke="#AA7C11" stroke-width="12" opacity="0.15" fill="none"/>
+                  <!-- Parks/Grünanlagen -->
+                  <rect x="10" y="10" width="80" height="30" rx="5" fill="#1E4D2B" opacity="0.1" />
+                  <rect x="150" y="70" width="100" height="60" rx="8" fill="#1E4D2B" opacity="0.1" />
+                  <!-- Praxis Pin -->
+                  <g transform="translate(280, 50)" class="map-pin-pulse">
+                    <circle cx="0" cy="0" r="15" fill="#C5A059" opacity="0.4" class="pulse-ring"/>
+                    <circle cx="0" cy="0" r="6" fill="#0F3A20" stroke="#C5A059" stroke-width="2"/>
+                  </g>
+                </svg>
+                <div class="map-overlay-text">
+                  <h5>Tierarztpraxis Aurelia</h5>
+                  <p>Kostenfreie Parkplätze direkt im Innenhof</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Tierarztpraxis Aurelia Logo" class="footer-logo">
+        <p>Ihre exklusive Tierarztpraxis für erstklassige Behandlungsmethoden, stressfreie Betreuung und herausragenden Service in München.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#notdienst">Notdienst</a></li>
+          <li><a href="#team">Unser Team</a></li>
+          <li><a href="#kontakt">Kontakt & Sprechzeiten</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-legal">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="#" id="impressumLink">Impressum</a></li>
+          <li><a href="#" id="datenschutzLink">Datenschutz</a></li>
+          <li><a href="#" id="cookieLink">Cookie-Einstellungen</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>&copy; 2026 Tierarztpraxis Aurelia. Alle Rechte vorbehalten. Gestaltet im exklusiven Grün & Gold Design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== TERMINBUCHUNGS MODAL (WIZARD) ==================== -->
+  <div class="modal-backdrop" id="bookingModalBackdrop">
+    <div class="booking-modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Schließen">&times;</button>
+      
+      <div class="modal-header">
+        <h2 id="modalTitle">Online-Terminvereinbarung</h2>
+        <p>In wenigen Schritten zu Ihrem Wunschtermin</p>
+        
+        <!-- Fortschrittsanzeige -->
+        <div class="wizard-progress-bar">
+          <div class="progress-fill" id="wizardProgressFill"></div>
+          <div class="progress-step active" data-step="1"><span>1</span><label>Tierart</label></div>
+          <div class="progress-step" data-step="2"><span>2</span><label>Leistung</label></div>
+          <div class="progress-step" data-step="3"><span>3</span><label>Termin</label></div>
+          <div class="progress-step" data-step="4"><span>4</span><label>Halter</label></div>
+        </div>
+      </div>
+      
+      <div class="modal-body">
+        <form id="bookingWizardForm">
+          
+          <!-- SCHRITT 1: TIERART AUSWÄHLEN -->
+          <div class="wizard-pane active" data-step="1">
+            <h3 class="pane-title">Für welches Haustier buchen Sie den Termin?</h3>
+            <div class="animal-select-grid">
+              <label class="animal-card">
+                <input type="radio" name="animalType" value="hund" required>
+                <div class="animal-card-content">
+                  <img src="assets/animals/dog.svg" alt="Hund Icon" class="animal-icon">
+                  <span>Hund</span>
+                </div>
+              </label>
+              
+              <label class="animal-card">
+                <input type="radio" name="animalType" value="katze">
+                <div class="animal-card-content">
+                  <img src="assets/animals/cat.svg" alt="Katze Icon" class="animal-icon">
+                  <span>Katze</span>
+                </div>
+              </label>
+              
+              <label class="animal-card">
+                <input type="radio" name="animalType" value="kleintier">
+                <div class="animal-card-content">
+                  <img src="assets/animals/rabbit.svg" alt="Kleintier Icon" class="animal-icon">
+                  <span>Kleintier</span>
+                </div>
+              </label>
+              
+              <label class="animal-card">
+                <input type="radio" name="animalType" value="vogel_exot">
+                <div class="animal-card-content">
+                  <img src="assets/animals/bird.svg" alt="Vogel/Exot Icon" class="animal-icon">
+                  <span>Vogel / Exot</span>
+                </div>
+              </label>
+            </div>
+            <span class="wizard-error" id="step1Error">Bitte wählen Sie eine Tierart aus.</span>
+          </div>
+          
+          <!-- SCHRITT 2: LEISTUNG AUSWÄHLEN -->
+          <div class="wizard-pane" data-step="2">
+            <h3 class="pane-title">Welche Leistung benötigen Sie?</h3>
+            <div class="select-options-list">
+              <label class="option-row">
+                <input type="radio" name="bookingReason" value="vorsorge" required>
+                <div class="option-content">
+                  <span class="option-title">Vorsorge & Impfung</span>
+                  <span class="option-desc">Jahres-Check, Impfschutz auffrischen, Beratung</span>
+                </div>
+              </label>
+              
+              <label class="option-row">
+                <input type="radio" name="bookingReason" value="zahnsanierung">
+                <div class="option-content">
+                  <span class="option-title">Zahnmedizinische Beratung</span>
+                  <span class="option-desc">Zahnstein, Zahnschmerzen, Kontrolluntersuchung</span>
+                </div>
+              </label>
+              
+              <label class="option-row">
+                <input type="radio" name="bookingReason" value="behandlung">
+                <div class="option-content">
+                  <span class="option-title">Allgemeine Sprechstunde & Behandlung</span>
+                  <span class="option-desc">Erkrankung, Lahmheit, Futterberatung, Nachsorge</span>
+                </div>
+              </label>
+              
+              <label class="option-row">
+                <input type="radio" name="bookingReason" value="op_beratung">
+                <div class="option-content">
+                  <span class="option-title">OP-Beratung & Vorbesprechung</span>
+                  <span class="option-desc">Geplante Operationen, Kastrationen, Narkoseberatung</span>
+                </div>
+              </label>
+            </div>
+            <span class="wizard-error" id="step2Error">Bitte wählen Sie einen Behandlungsgrund aus.</span>
+          </div>
+          
+          <!-- SCHRITT 3: ARZT, DATUM & UHRZEIT -->
+          <div class="wizard-pane" data-step="3">
+            <h3 class="pane-title">Wann möchten Sie zu uns kommen?</h3>
+            
+            <div class="booking-datetime-layout">
+              <!-- Tierarzt-Auswahl -->
+              <div class="wizard-sub-section">
+                <h4 class="sub-section-title">Gewünschter Behandler</h4>
+                <div class="doctor-select-grid">
+                  <label class="doctor-radio-card">
+                    <input type="radio" name="preferredDoctor" value="beliebig" checked required>
+                    <div class="doctor-radio-content">
+                      <span class="doc-avatar">&#9733;</span>
+                      <div class="doc-details">
+                        <span class="doc-name">Beliebiger Tierarzt</span>
+                        <span class="doc-special">Schnellster freier Termin</span>
+                      </div>
+                    </div>
+                  </label>
+                  
+                  <label class="doctor-radio-card">
+                    <input type="radio" name="preferredDoctor" value="sommer">
+                    <div class="doctor-radio-content">
+                      <span class="doc-avatar">AS</span>
+                      <div class="doc-details">
+                        <span class="doc-name">Dr. Aurelia Sommer</span>
+                        <span class="doc-special">Innere Medizin, Kardiologie</span>
+                      </div>
+                    </div>
+                  </label>
+                  
+                  <label class="doctor-radio-card">
+                    <input type="radio" name="preferredDoctor" value="winter">
+                    <div class="doctor-radio-content">
+                      <span class="doc-avatar">LW</span>
+                      <div class="doc-details">
+                        <span class="doc-name">Dr. Lukas Winter</span>
+                        <span class="doc-special">Chirurgie, Orthopädie</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              
+              <!-- Datum & Zeit slots -->
+              <div class="wizard-sub-section">
+                <h4 class="sub-section-title">Datum auswählen</h4>
+                <div class="date-input-wrapper">
+                  <input type="date" id="bookingDate" name="bookingDate" required class="custom-date-input">
+                </div>
+                
+                <h4 class="sub-section-title margin-top-md">Verfügbare Uhrzeiten</h4>
+                <div class="time-slots-grid" id="timeSlotsGrid">
+                  <!-- Die Slots werden per JS abhängig vom Datum dynamisch generiert -->
+                  <div class="text-muted text-center padding-sm">Bitte wählen Sie zuerst ein Datum aus.</div>
+                </div>
+                <input type="hidden" id="selectedTimeSlot" name="selectedTimeSlot" required>
+              </div>
+            </div>
+            <span class="wizard-error" id="step3Error">Bitte wählen Sie Behandler, Datum und einen Zeitslot aus.</span>
+          </div>
+          
+          <!-- SCHRITT 4: HALTER & TIERDATEN -->
+          <div class="wizard-pane" data-step="4">
+            <h3 class="pane-title">Ihre Kontaktdaten & Patienteninfo</h3>
+            
+            <div class="wizard-form-grid">
+              <div class="form-group">
+                <label for="ownerName">Name des Halters *</label>
+                <input type="text" id="ownerName" name="ownerName" required placeholder="z.B. Sabine Müller">
+              </div>
+              
+              <div class="form-group">
+                <label for="patientName">Name des Tieres *</label>
+                <input type="text" id="patientName" name="patientName" required placeholder="z.B. Bella">
+              </div>
+              
+              <div class="form-group">
+                <label for="ownerEmail">E-Mail-Adresse *</label>
+                <input type="email" id="ownerEmail" name="ownerEmail" required placeholder="sabine@muster.de">
+              </div>
+              
+              <div class="form-group">
+                <label for="ownerPhone">Telefonnummer *</label>
+                <input type="tel" id="ownerPhone" name="ownerPhone" required placeholder="z.B. 0170 1234567">
+              </div>
+              
+              <div class="form-group full-width">
+                <label for="bookingNotes">Hinweise zu Beschwerden (optional)</label>
+                <textarea id="bookingNotes" name="bookingNotes" rows="2" placeholder="Beschreiben Sie kurz das Anliegen oder eventuelle Vorerkrankungen..."></textarea>
+              </div>
+              
+              <div class="form-privacy-check full-width">
+                <input type="checkbox" id="bookingPrivacy" name="bookingPrivacy" required>
+                <label for="bookingPrivacy">Ich bestätige, dass die Daten zur Terminbuchung erfasst werden dürfen. Ein Ausfallhonorar wird bei Nichterscheinen ohne Absage (mind. 24h vorher) fällig. *</label>
+              </div>
+            </div>
+            <span class="wizard-error" id="step4Error">Bitte füllen Sie alle Pflichtfelder aus und akzeptieren Sie die Vereinbarungen.</span>
+          </div>
+          
+          <!-- SCHRITT 5: ERFOLGSMELDUNG (KEIN BUTTON MEHR) -->
+          <div class="wizard-pane" data-step="5">
+            <div class="wizard-success-screen">
+              <div class="success-checkmark-wrapper">
+                <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                  <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                  <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+              </div>
+              <h3>Termin erfolgreich angefragt!</h3>
+              <p class="success-intro">Vielen Dank für Ihr Vertrauen. Wir haben Ihre Buchung erfasst:</p>
+              
+              <div class="booking-summary-box">
+                <div class="summary-row">
+                  <span class="sum-label">Tierart & Name:</span>
+                  <span class="sum-val" id="sumPetInfo">Hund (Bella)</span>
+                </div>
+                <div class="summary-row">
+                  <span class="sum-label">Behandlung:</span>
+                  <span class="sum-val" id="sumReasonInfo">Vorsorge & Impfung</span>
+                </div>
+                <div class="summary-row">
+                  <span class="sum-label">Terminzeit:</span>
+                  <span class="sum-val font-bold text-green" id="sumTimeInfo">Donnerstag, 15. Juni um 10:15 Uhr</span>
+                </div>
+                <div class="summary-row">
+                  <span class="sum-label">Behandler:</span>
+                  <span class="sum-val" id="sumDocInfo">Dr. Aurelia Sommer</span>
+                </div>
+              </div>
+              
+              <p class="success-note">Wir haben Ihnen eine Bestätigungs-E-Mail an <span id="sumEmailInfo" class="font-bold"></span> gesendet. Sollte etwas dazwischenkommen, sagen Sie den Termin bitte telefonisch ab.</p>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      
+      <div class="modal-footer" id="modalFooter">
+        <button class="btn btn-outline-green" id="wizardBackBtn" style="display: none;">Zurück</button>
+        <button class="btn btn-green" id="wizardNextBtn">Weiter &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPRESSUM MODAL -->
+  <div class="modal-backdrop" id="impressumModal">
+    <div class="legal-modal-card">
+      <button class="modal-close-btn" id="impressumClose">&times;</button>
+      <h2>Impressum</h2>
+      <div class="legal-content">
+        <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+        <p>Tierarztpraxis Aurelia GmbH<br>Aurelia-Weg 24<br>80331 München</p>
+        <p><strong>Vertreten durch:</strong><br>Dr. med. vet. Aurelia Sommer</p>
+        <p><strong>Kontakt:</strong><br>Telefon: +49 (0) 89 123 456 78<br>E-Mail: info@tierarzt-aurelia.de</p>
+        <p><strong>Aufsichtsbehörde:</strong><br>Bayerische Landestierärztekammer (BLTK)<br>Gesetzliche Berufsbezeichnung: Tierarzt (verliehen in der Bundesrepublik Deutschland)</p>
+        <p><strong>Berufsrechtliche Regelungen:</strong><br>Berufsordnung der Landestierärztekammer Bayern. Nachzulesen unter <a href="https://www.bltk.de" target="_blank" rel="noopener">www.bltk.de</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATENSCHUTZ MODAL -->
+  <div class="modal-backdrop" id="datenschutzModal">
+    <div class="legal-modal-card">
+      <button class="modal-close-btn" id="datenschutzClose">&times;</button>
+      <h2>Datenschutzerklärung</h2>
+      <div class="legal-content">
+        <p><strong>1. Datenschutz auf einen Blick</strong></p>
+        <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften (DSGVO) sowie dieser Datenschutzerklärung.</p>
+        <p><strong>2. Datenerfassung auf unserer Website</strong></p>
+        <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in unser Kontaktformular oder den Terminbuchungs-Assistenten eingeben (Name, E-Mail, Telefonnummer, Tierart, Tiername).</p>
+        <p>Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage bzw. zur Abwicklung des gebuchten Termins genutzt. Eine Weitergabe an Dritte erfolgt niemals ohne Ihre ausdrückliche Zustimmung.</p>
+        <p><strong>3. Ihre Rechte</strong></p>
+        <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Schlappohren -->
+  <path d="M 5,8 C 3,8 2,14 4,17 C 5,18.5 6,17 6,13" />
+  <path d="M 19,8 C 21,8 22,14 20,17 C 19,18.5 18,17 18,13" />
+  
+  <!-- Kopfumriss -->
+  <path d="M 6,10 C 6,6 18,6 18,10 C 18,15 16,18 12,18 C 8,18 6,15 6,10 Z" />
+  
+  <!-- Augen -->
+  <circle cx="9.5" cy="11" r="1.2" fill="currentColor" />
+  <circle cx="14.5" cy="11" r="1.2" fill="currentColor" />
+  
+  <!-- Nase und Schnauze -->
+  <path d="M 12,13.5 C 11,13.5 10.5,14 10.5,14.8 C 10.5,15.8 12,16.2 12,16.2 C 12,16.2 13.5,15.8 13.5,14.8 C 13.5,13.5 13,13.5 12,13.5 Z" fill="currentColor" />
+  <path d="M 12,16.2 L 12,17.2" />
+</svg>

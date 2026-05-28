@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Lange Hasenohren -->
+  <path d="M 8,10 C 8,5 6,1 8,1 C 10,1 10.5,5 10.5,9" fill="none" />
+  <path d="M 16,10 C 16,5 18,1 16,1 C 14,1 13.5,5 13.5,9" fill="none" />
+  
+  <!-- Kopfumriss -->
+  <path d="M 7,11 C 7,8 17,8 17,11 C 17,15.5 15.5,18 12,18 C 8.5,18 7,15.5 7,11 Z" />
+  
+  <!-- Augen -->
+  <circle cx="9.5" cy="12" r="1" fill="currentColor" />
+  <circle cx="14.5" cy="12" r="1" fill="currentColor" />
+  
+  <!-- Nase -->
+  <polygon points="12,13.5 11,12.7 13,12.7" fill="currentColor" />
+  
+  <!-- Mund & Hasenzähne -->
+  <path d="M 12,13.5 L 12,14.5" />
+  <path d="M 11.2,14.5 L 11.2,15.5 L 12,15.5 L 12,14.5" />
+  <path d="M 12.8,14.5 L 12.8,15.5 L 12,15.5" />
+
+  <!-- Schnurrhaare -->
+  <path d="M 7.5,14 L 4.5,14" />
+  <path d="M 16.5,14 L 19.5,14" />
+</svg>
